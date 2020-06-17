@@ -7,6 +7,15 @@ public class User {
     private int id;
     private String name;
     private String password;
+    private String gender;
+
+    public String gethehe() {
+        return gender;
+    }
+
+    public void sethehe(String gender) {
+        this.gender = gender;
+    }
 
     public int getId() {
         return id;
@@ -38,6 +47,7 @@ public class User {
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", password='" + password + '\'' +
+                ", gender='" + gender + '\'' +
                 '}';
     }
 }
