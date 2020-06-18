@@ -26,7 +26,7 @@ public class ServletContextDemo5 extends HttpServlet {
         String realPath2 = context.getRealPath("/WEB-INF/c.txt");//WEB-INF目录下的资源访问
         System.out.println(realPath2);
 
-        String realPath3 = context.getRealPath("/WEB-INF/classes/b.txt");//src目录下的资源访问
+        String realPath3 = context.getRealPath("/WEB-INF/classes/a.txt");//src目录下的资源访问
         System.out.println(realPath3);
 
     }
