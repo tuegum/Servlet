@@ -1,4 +1,4 @@
-package tuegum.util;
+package tuegum.test;
 
 import org.apache.commons.beanutils.BeanUtils;
 import org.junit.Test;

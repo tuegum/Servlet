@@ -16,11 +16,14 @@
             var change = document.getElementById("change");
             //2.绑定单击事件
             img.onclick = function() {
-                var date = new Date().getTime();
-                img.src = "/naruto/checkCodeServlet?" + date;
+                flash();
             }
             change.onclick = function() {
                 //加时间戳
+                flash();
+                return false;
+            }
+            function flash() {
                 var date = new Date().getTime();
                 img.src = "/naruto/checkCodeServlet?" + date;
             }
@@ -33,7 +36,7 @@
 </head>
 <body>
 <img id="checkCode" src="/naruto/checkCodeServlet"/>
-<a id="change">看不清？换一张</a>
+<a id="change" href="">看不清？换一张</a>
 <br><br><br><br><br><br><br><hr>
 <a href="http://localhost/naruto/image/bg_1.jpg">图片1</a>
 
