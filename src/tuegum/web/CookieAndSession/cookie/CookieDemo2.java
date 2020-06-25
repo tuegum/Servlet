@@ -8,6 +8,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.net.URLDecoder;
+import java.net.URLEncoder;
 import java.nio.charset.StandardCharsets;
 
 /**
@@ -20,7 +21,7 @@ public class CookieDemo2 extends HttpServlet {
         for (int i = 0; cookies != null && i < cookies.length; i++) {
             String name = cookies[i].getName();
             //经过URLEncoding就要URLDecoding
-            String value = URLDecoder.decode(cookies[i].getValue(), StandardCharsets.UTF_8);
+            String value = URLDecoder.decode(cookies[i].getValue(), URLEncoder.encode(name, "UTF-8"));
             response.getWriter().write(name+ "-------" + value);
         }
     }
