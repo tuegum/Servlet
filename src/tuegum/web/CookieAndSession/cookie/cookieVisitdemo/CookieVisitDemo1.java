@@ -25,7 +25,7 @@ public class CookieVisitDemo1 extends HttpServlet {
                     flag = true;
                     String value = cookie.getValue();
                     value = URLDecoder.decode(value,"utf-8");
-                    response.reset();
+//                    response.reset();
                     response.getWriter().write("<h1>欢迎回来，您上次的访问时间为：" + value + "</h1>");
 
                     Date date = new Date();

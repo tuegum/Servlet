@@ -11,6 +11,17 @@
     <title>$Title$</title>
   </head>
   <body>
-  $END$
+      <%
+        System.out.println("hello Jsp");
+      %>
+
+      <%!
+        int i =3;
+      %>
+
+      <%= "hello" %>
+
+
+
   </body>
 </html>
